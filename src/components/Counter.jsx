@@ -1,5 +1,6 @@
 import { useState } from 'react';
- 
+import '../styles/counter.scss';
+
 export function Counter() {
     const [counter, setCounter] = useState(0);
 
@@ -10,7 +11,7 @@ export function Counter() {
         setCounter(counter - 1);
     }
     return (
-        <div>
+        <div className="counter" >
             <h2>{counter}</h2>
             <button type="button" onClick={increment} > 
                 Increment 
